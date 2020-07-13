@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/villanima-components.css">
+    <link rel="stylesheet" href="/static/villanima.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body ng-app="msSiteAngular" class="ng-scope" style="overflow: visible;">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- ngView:  -->
+    <div class="main-container ng-scope" ng-view="">
+        <div id="ms-preview" ms-template-loader-directive="" images="images" page="page" theme-id="themeId" settings="settings" class="ng-scope ng-isolate-scope">
+            <div id="ms-html">
+                <div id="ms-body">
+                    <!--[if lt IE 7]>       <![endif]-->
+                    <!--[if IE 7]>          <![endif]-->
+                    <!--[if IE 8]>          <![endif]-->
+                    <!--[if gt IE 8]><!-->
+                    <!--<![endif]-->
+
+                    <div class="container ng-scope">
+                        <header class="main-header">
+                            <section class="banner">
+                                <div class="logo" style="">
+                                    <h1 ms-header-item-text="&#39;main-title&#39;" editable="editMode" fit-text="&#39;.logo&#39;" class="ng-isolate-scope ms-header-text-item" data-original-size="64px" style=""><span class="ng-scope">This is my title</span></h1>
+                                </div>
+                            </section>
+
+                            <div class="navigation-wrapper">
+                                <nav class="main-menu ms-block navigation-block" ms-content-item-navigation="">
+
+                                    <div class="mobile-menu">
+                                        <svg class="icon-list">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-list"></use>
+                    </svg>
+                                        <span>Menu</span>
+                                    </div>
+
+                                    <div class="mobile-menu-close">
+                                        <svg class="icon-close">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-close"></use>
+                    </svg>
+                                        <span>Close</span>
+                                    </div>
+
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/home" ng-click="linkClicked()" class="ng-binding ng-scope" href="/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/gallery" ng-click="linkClicked()" class="ng-binding ng-scope" href="/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/accommodation-details" ng-click="linkClicked()" class="ng-binding ng-scope" href="/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/location" ng-click="linkClicked()" class="ng-binding ng-scope" href="/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/local-facilities-&amp;-island-view" ng-click="linkClicked()" class="ng-binding ng-scope" href="/local-facilities-&amp;-island-view.html">local
+                        facilities &amp; island view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/rates---booking---availability" ng-click="linkClicked()" class="ng-binding ng-scope" href="/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/contact-form" ng-click="linkClicked()" class="ng-binding ng-scope" href="/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/useful-links" ng-click="linkClicked()" class="ng-binding ng-scope" href="/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/guest-reviews-" ng-click="linkClicked()" class="ng-binding ng-scope" href="/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </header>
+
+                        <section class="content-wrapper">
+
+                            <aside class="navigation">
+                                <nav class="ms-block navigation-block">
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/home" class="ng-binding ng-scope" href="/#!/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/gallery" class="ng-binding ng-scope" href="/#!/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/accommodation-details" class="ng-binding ng-scope" href="/#!/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/location" class="ng-binding ng-scope" href="/#!/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/local-facilities-&amp;-island-view" class="ng-binding ng-scope" href="/#!/local-facilities-&amp;-island-view.html">local facilities &amp; island
+                        view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/rates---booking---availability" class="ng-binding ng-scope" href="/#!/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/contact-form" class="ng-binding ng-scope" href="/#!/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/useful-links" class="ng-binding ng-scope" href="/#!/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/guest-reviews-" class="ng-binding ng-scope" href="/#!/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                    </ul>
+                                </nav>
+                            </aside>
+
+                            <!-- start-of-content -->
+
+                            <div class="content">
+                                <div class="ms-content-items-layout-directive ms-grid" layout-page-data="layoutPageData">
+                                    <!-- ngRepeat: row in pagedata -->
+                                    <div ng-repeat="row in pagedata" data-id="e3237850-8205-4fa3-88fb-37b122421f7a" ng-init="row.settings.color=row.settings.color||&#39;#ffffff&#39;" class="ms-row ms-level-1 ng-scope" style="">
+                                        <div class="ms-row-inner">
+                                            <!-- ngRepeat: col in row.content -->
+                                            <div ng-repeat="col in row.content" data-id="4017ef79-331d-46cc-9c30-be821e2f6dd9" data-size="12" class="ms-col ms-level-1 ng-scope ms-col-12" ng-class="&#39;ms-col-&#39; + col.size">
+                                                <!-- ngRepeat: next in col.content -->
+                                                <div ng-repeat="next in col.content" class="ng-scope">
+                                                    <!-- ngIf: next.type!=='row' -->
+                                                    <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                                                        <div ms-content-item-controls="" actions="actions" class="ms-block text-block ms-level-1" data-id="4c5dd101-7f50-4fc6-a2cc-4ea0a1fd2988">
+                                                            <div style="color:;background-color:;line-height:" ng-bind-html="trustedHTML" ms-content-item-text="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-binding ng-isolate-scope">
+                                                                <p><em><strong>Gallery&nbsp; -&nbsp; " please click on the photograph to see large picture "&nbsp; - </strong></em></p>
+                                                            </div>
+                                                            <div class="element-controls ms-tools ng-scope">
+                                                                <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                                                <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end ngIf: next.type!=='row' -->
+                                                    <!-- ngIf: next.type==='row' -->
+                                                </div>
+                                                <!-- end ngRepeat: next in col.content -->
+                                            </div>
+                                            <!-- end ngRepeat: col in row.content -->
+                                        </div>
+                                    </div>
+                                    <!-- end ngRepeat: row in pagedata -->
+                                    <div ng-repeat="row in pagedata" data-id="e919aae5-0c1d-4fc4-9214-e2ba868f036a" ng-init="row.settings.color=row.settings.color||&#39;#ffffff&#39;" class="ms-row ms-level-1 ng-scope" style="">
+                                        <div class="ms-row-inner">
+                                            <!-- ngRepeat: col in row.content -->
+                                            <div ng-repeat="col in row.content" data-id="8b56aec3-9a27-4325-8060-74e0e6a99186" data-size="12" class="ms-col ms-level-1 ng-scope ms-col-12" ng-class="&#39;ms-col-&#39; + col.size">
+                                                <!-- ngRepeat: next in col.content -->
+                                                <div ng-repeat="next in col.content" class="ng-scope">
+                                                    <!-- ngIf: next.type!=='row' -->
+                                                    <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                                                        <div ms-content-item-controls="" actions="actions" class="ms-block slide-show-block ms-level-1" data-id="3c104921-53a8-49a8-8509-ae9823e83e91">
+                                                            <!-- ngInclude: getGalleryTemplate() -->
+                                                            <div ng-include="getGalleryTemplate()" ms-content-item-slide-show="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-scope">
+                                                                <div class="gallery-grid-wrap ng-scope">
+                                                                    <ul class="items-per-row-3 crop-images" ng-class="{ &#39;crop-images&#39;: contentItemData.settings.cropImages }">
+                                                                        <!-- ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Villa External" alt="Villa External" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/a83afde8-82da-404a-8b55-8aebf2f4adde.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Villa External
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Villa External" alt="Villa External" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/b800a435-ef36-4314-9eb9-dca81df31741.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Villa External
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Villa External" alt="Villa External" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/afb83c37-3f04-49a6-bc70-671498aaa34f.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Villa External
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Kitchen" alt="Kitchen" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/1559f99d-2d5f-4959-a669-7e7c3207971c.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Kitchen
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Dining Area" alt="Dining Area" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/0b6bba39-1ce7-46f6-8ef2-031bd8c998e1.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Dining Area
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Twin Bedroom" alt="Twin Bedroom" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/c4f21cf9-4169-4e84-9415-f851f1b175e6.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Twin Bedroom
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Double Bedroom" alt="Double Bedroom" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/8b1f4b01-ded2-465f-9ca2-aec916a52390.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Double Bedroom
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="Master Bedroom" alt="Master Bedroom" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/97d5cfe5-0a43-4e1b-88e3-012a57373f65.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                Master Bedroom
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="External Bistro Table" alt="External Bistro Table" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/cc46fa8e-f3c0-442a-8965-d74feec3399b.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+                                                                                External Bistro Table
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/e80f7ed0-53b4-4998-aeed-c7ccd97ad804.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/5e91afaa-30bd-4754-8f88-308e9e443b66.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/07fefc02-40fe-4076-a30f-b54008e0691b.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/0a2b35fb-2f83-42a0-ad60-6684709a192e.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/de4ea163-325c-48dc-98a8-983bc200b846.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/e357517d-5480-4019-88b9-ef912a847102.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/24c79c71-f0e4-4400-9b57-0ad3af9a06d2.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/ee833c78-c6fe-4887-abe3-71194e8932c0.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/d3a1d4b7-69e4-4869-9bc9-529287db2b86.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/f58b6162-0657-4615-85c0-fd129088cbed.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/28d7414f-65bb-4e03-a367-2f70ad44fdf1.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/cb8268bc-5390-49d2-b705-24c2ddbc8ffa.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/62056087-a114-4eb4-b697-1541772e45a3.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/96be7eb1-7059-4f6e-9b8a-e7b5bf545a54.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/3872758a-3817-48ce-9e7d-926f7b6b4ad3.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/fe3bb91f-d98f-4bba-9ca2-63d4a735bd59.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/ffc51997-9a34-48f1-bdf5-8cfa06118010.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/ac97c5c3-7a88-43f7-bd69-2af09e4bfc6e.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/e81a0614-7f8a-459b-8cdd-da38558bbb1c.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/fd220a09-7272-402e-8419-4e9a0d461d06.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/05469e44-f756-4d45-8b0a-d7a8c2606840.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/b1b4213b-ebeb-47ce-a023-74db0150e15b.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/28c2061a-01b8-477e-b427-874be802afd1.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/c4dfda08-9fc0-41ab-b79d-f6d3e5e28e42.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/2e56fa0a-106f-4899-b3eb-1e9d8c8216f6.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/a7d34032-36b0-4be6-8c52-18d4ac9baaae.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/8e4bd98b-beeb-42d5-8ea9-200e55aa3ab1.jpg);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/15ccc097-b162-4115-912a-60453482f171.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/0c1db4b3-cd99-4f2b-807d-bd745bc781e7.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/318aed03-645d-4d9b-b3dd-8cc5d0f6770d.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/e0317ec7-2790-47d2-8fb5-efbef94eabf8.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/4d538e94-b81e-4f52-84f4-25238ec65af5.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/6fc48d86-c259-4493-823b-0a5451f1b695.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/79ee64e7-922f-4b1c-829c-4ffbab47df8e.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/6471a1ef-4e41-45e9-80a0-1e77720f05d6.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/9a3dd12c-0f94-4649-8759-69bafcadef9b.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/01fd77d1-7807-48db-8b8a-b38a3120b158.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/13790e15-4e4b-488b-a32d-d72fc6c1d5db.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/3c145033-6d35-4f25-ad44-c01396f922b6.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/e59bdb6e-1a9d-4889-a5cb-fe40fca6ee2d.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/fbe822b0-1aa3-420c-b4ff-44e73d00f41d.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/6e3ad97e-c082-4c46-81a5-e9925a302456.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                        <li ng-repeat="slide in slides" class="ng-scope">
+                                                                            <!-- ngIf: !contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.cropImages -->
+                                                                            <div class="image ng-scope" ng-if="contentItemData.settings.cropImages">
+                                                                                <a rel="4d9aafb1-16b7-4c6f-3c3a-3369a513b9fd" ng-click="openItem($index)" title="" alt="" style="background-image: url(https://s3-eu-west-1.amazonaws.com/omnibuilder/0f2f95ad-bb49-4a6b-9759-ba0783c112ab/ee41df94-7941-4e65-8302-426e44070dec.JPG);"></a>
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.cropImages -->
+
+                                                                            <!-- ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                            <div class="caption ng-binding ng-scope" ng-if="contentItemData.settings.showCaptionsInGrid &amp;&amp; contentItemData.settings.itemsPerRow &lt;= 5">
+
+                                                                            </div>
+                                                                            <!-- end ngIf: contentItemData.settings.showCaptionsInGrid && contentItemData.settings.itemsPerRow <= 5 -->
+                                                                        </li>
+                                                                        <!-- end ngRepeat: slide in slides -->
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            <div class="element-controls ms-tools ng-scope">
+                                                                <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                                                <div class="element-control has-tooltip settings icon-settings" ng-click="actions.displaySettings()" ms-tooltip="" tooltip-content="Settings"></div>
+                                                                <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- end ngIf: next.type!=='row' -->
+                                                    <!-- ngIf: next.type==='row' -->
+                                                </div>
+                                                <!-- end ngRepeat: next in col.content -->
+                                            </div>
+                                            <!-- end ngRepeat: col in row.content -->
+                                        </div>
+                                    </div>
+                                    <!-- end ngRepeat: row in pagedata -->
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <!-- end-of-content -->
+
+                        </section>
+
+                        <footer>
+                            <ms-copyright>
+                                <div class="copyright ng-scope"> &copy; Copyright Villa Nima 2020
+                                </div>
+                            </ms-copyright>
+                        </footer>
+
+                        <div src="/static/navigation.js">
+                            <script src="/static/main.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div ms-login-popup settings="{provider:'Paypal'}"></div>-->
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- wpm commented out code
+    <script src="/static/vendor.js"></script>
+    <script src="/static/precache.js"></script>
+    <script src="/static/config.js"></script>
+    <script src="/static/scripts.js"></script>
+    -->
+</body>
+
+</html>

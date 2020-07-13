@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/villanima-components.css">
+    <link rel="stylesheet" href="/static/villanima.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body ng-app="msSiteAngular" class="ng-scope" style="overflow: visible;">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- ngView:  -->
+    <div class="main-container ng-scope" ng-view="">
+        <div id="ms-preview" ms-template-loader-directive="" images="images" page="page" theme-id="themeId" settings="settings" class="ng-scope ng-isolate-scope">
+            <div id="ms-html">
+                <div id="ms-body">
+                    <!--[if lt IE 7]>       <![endif]-->
+                    <!--[if IE 7]>          <![endif]-->
+                    <!--[if IE 8]>          <![endif]-->
+                    <!--[if gt IE 8]><!-->
+                    <!--<![endif]-->
+
+                    <div class="container ng-scope">
+                        <header class="main-header">
+                            <section class="banner">
+                                <div class="logo" style="">
+                                    <h1 ms-header-item-text="&#39;main-title&#39;" editable="editMode" fit-text="&#39;.logo&#39;" class="ng-isolate-scope ms-header-text-item" data-original-size="64px" style=""><span class="ng-scope">This is my title</span></h1>
+                                </div>
+                            </section>
+
+                            <div class="navigation-wrapper">
+                                <nav class="main-menu ms-block navigation-block" ms-content-item-navigation="">
+
+                                    <div class="mobile-menu">
+                                        <svg class="icon-list">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-list"></use>
+                    </svg>
+                                        <span>Menu</span>
+                                    </div>
+
+                                    <div class="mobile-menu-close">
+                                        <svg class="icon-close">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-close"></use>
+                    </svg>
+                                        <span>Close</span>
+                                    </div>
+
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/home" ng-click="linkClicked()" class="ng-binding ng-scope" href="/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/gallery" ng-click="linkClicked()" class="ng-binding ng-scope" href="/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/accommodation-details" ng-click="linkClicked()" class="ng-binding ng-scope" href="/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/location" ng-click="linkClicked()" class="ng-binding ng-scope" href="/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/local-facilities-&amp;-island-view" ng-click="linkClicked()" class="ng-binding ng-scope" href="/local-facilities-&amp;-island-view.html">local
+                        facilities &amp; island view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/rates---booking---availability" ng-click="linkClicked()" class="ng-binding ng-scope" href="/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/contact-form" ng-click="linkClicked()" class="ng-binding ng-scope" href="/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/useful-links" ng-click="linkClicked()" class="ng-binding ng-scope" href="/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/guest-reviews-" ng-click="linkClicked()" class="ng-binding ng-scope" href="/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </header>
+
+                        <section class="content-wrapper">
+
+                            <aside class="navigation">
+                                <nav class="ms-block navigation-block">
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/home" class="ng-binding ng-scope" href="/#!/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/gallery" class="ng-binding ng-scope" href="/#!/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/accommodation-details" class="ng-binding ng-scope" href="/#!/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/location" class="ng-binding ng-scope" href="/#!/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/local-facilities-&amp;-island-view" class="ng-binding ng-scope" href="/#!/local-facilities-&amp;-island-view.html">local facilities &amp; island
+                        view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/rates---booking---availability" class="ng-binding ng-scope" href="/#!/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/contact-form" class="ng-binding ng-scope" href="/#!/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/useful-links" class="ng-binding ng-scope" href="/#!/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/guest-reviews-" class="ng-binding ng-scope" href="/#!/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                    </ul>
+                                </nav>
+                            </aside>
+
+<!-- start-of-content -->
+<div class="content">
+    <div class="ms-content-items-layout-directive ms-grid" layout-page-data="layoutPageData">
+        <!-- ngRepeat: row in pagedata -->
+        <div ng-repeat="row in pagedata" data-id="b67fce5b-2eeb-4726-92f3-2d92b84d35b0" ng-init="row.settings.color=row.settings.color||&#39;#ffffff&#39;" class="ms-row ms-level-1 ng-scope" style="">
+            <div class="ms-row-inner">
+                <!-- ngRepeat: col in row.content -->
+                <div ng-repeat="col in row.content" data-id="83f18baa-a49d-4180-8e27-9a924db68c88" data-size="12" class="ms-col ms-level-1 ng-scope ms-col-12" ng-class="&#39;ms-col-&#39; + col.size">
+                    <!-- ngRepeat: next in col.content -->
+                    <div ng-repeat="next in col.content" class="ng-scope">
+                        <!-- ngIf: next.type!=='row' -->
+                        <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                            <div ms-content-item-controls="" actions="actions" class="ms-block text-block ms-level-1" data-id="a84fb25b-efdc-4e82-a0f2-4cd00eff6e16">
+                                <div style="color:;background-color:;line-height:" ng-bind-html="trustedHTML" ms-content-item-text="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-binding ng-isolate-scope">
+                                    <p></p>
+                                    <h3><span style="color:#3366cc"><strong><em>Accommodation</em></strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;<em>Villa Nima is fully EOT licensed with the Greek National Tourist Organisation to ensure user safety and compliance.</em></p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p><em>Ornate designed gates greet you as you arrive at the Villa with adequate parking facility for at least two cars. Stone pathways and landscaped garden lead you to the Villa entrance. </em></p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p><em>Inside the ground floor open plan area is furnished to a high quality c/w 2 large 3 seater leather sofas, Natural oak dining suite, besoke wine rack, Modern 37�� flat screen, DVD and I Pod/ CD Music system.&nbsp; FREE Unlimited WIFI Access.</em></p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p><em>The kitchen area is fully fitted with modern appliances and is fully kitted out with all cookware and utensils you may need. Around the Villa there are five intimate 2 seater bistro tables and a unique slate round table which will seat 4. </em></p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p><em>The sun terrace has 8 sun loungers. The pool is beautifully tiled in sky blue mosaic tiles and is illuminated. Adjacent to the pool there are stone steps which take you to the private landscaped garden. </em></p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p><em>Within the garden area there is a traditional designed pergola c/w 2 round tables and 8 chairs. This is all adjacent to the traditional stone BBQ. </em></p>
+
+                                    <p>&nbsp;</p>
+                                    <p></p>
+                                </div>
+                                <div class="element-controls ms-tools ng-scope">
+                                    <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                    <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ngIf: next.type!=='row' -->
+                        <!-- ngIf: next.type==='row' -->
+                    </div>
+                    <!-- end ngRepeat: next in col.content -->
+                    <div ng-repeat="next in col.content" class="ng-scope">
+                        <!-- ngIf: next.type!=='row' -->
+                        <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                            <div ms-content-item-controls="" actions="actions" class="ms-block single-image-block ms-level-1" data-id="id-145320644863470761">
+                                <div ms-content-item-single-image="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-isolate-scope">
+                                    <div class="ng-scope"><img title="" alt="" ng-src="/img/villa-nima-layout-and-facilities.png" src="/img/villa-nima-layout-and-facilities.png">
+                                        <!-- ngIf: contentItemData.settings.caption -->
+                                    </div>
+                                </div>
+                                <div class="element-controls ms-tools ng-scope">
+                                    <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                    <div class="element-control has-tooltip settings icon-settings" ng-click="actions.displaySettings()" ms-tooltip="" tooltip-content="Settings"></div>
+                                    <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ngIf: next.type!=='row' -->
+                        <!-- ngIf: next.type==='row' -->
+                    </div>
+                    <!-- end ngRepeat: next in col.content -->
+                </div>
+                <!-- end ngRepeat: col in row.content -->
+            </div>
+        </div>
+        <!-- end ngRepeat: row in pagedata -->
+    </div>
+</div>
+<!-- end-of-content -->
+                        </section>
+
+                        <footer>
+                            <ms-copyright>
+                                <div class="copyright ng-scope"> &copy; Copyright Villa Nima 2020
+                                </div>
+                            </ms-copyright>
+                        </footer>
+
+                        <div src="/static/navigation.js">
+                            <script src="/static/main.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div ms-login-popup settings="{provider:'Paypal'}"></div>-->
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- wpm commented out code
+    <script src="/static/vendor.js"></script>
+    <script src="/static/precache.js"></script>
+    <script src="/static/config.js"></script>
+    <script src="/static/scripts.js"></script>
+    -->
+</body>
+
+</html>

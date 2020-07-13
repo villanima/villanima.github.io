@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/villanima-components.css">
+    <link rel="stylesheet" href="/static/villanima.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body ng-app="msSiteAngular" class="ng-scope" style="overflow: visible;">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- ngView:  -->
+    <div class="main-container ng-scope" ng-view="">
+        <div id="ms-preview" ms-template-loader-directive="" images="images" page="page" theme-id="themeId" settings="settings" class="ng-scope ng-isolate-scope">
+            <div id="ms-html">
+                <div id="ms-body">
+                    <!--[if lt IE 7]>       <![endif]-->
+                    <!--[if IE 7]>          <![endif]-->
+                    <!--[if IE 8]>          <![endif]-->
+                    <!--[if gt IE 8]><!-->
+                    <!--<![endif]-->
+
+                    <div class="container ng-scope">
+                        <header class="main-header">
+                            <section class="banner">
+                                <div class="logo" style="">
+                                    <h1 ms-header-item-text="&#39;main-title&#39;" editable="editMode" fit-text="&#39;.logo&#39;" class="ng-isolate-scope ms-header-text-item" data-original-size="64px" style=""><span class="ng-scope">This is my title</span></h1>
+                                </div>
+                            </section>
+
+                            <div class="navigation-wrapper">
+                                <nav class="main-menu ms-block navigation-block" ms-content-item-navigation="">
+
+                                    <div class="mobile-menu">
+                                        <svg class="icon-list">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-list"></use>
+                    </svg>
+                                        <span>Menu</span>
+                                    </div>
+
+                                    <div class="mobile-menu-close">
+                                        <svg class="icon-close">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-close"></use>
+                    </svg>
+                                        <span>Close</span>
+                                    </div>
+
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/home" ng-click="linkClicked()" class="ng-binding ng-scope" href="/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/gallery" ng-click="linkClicked()" class="ng-binding ng-scope" href="/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/accommodation-details" ng-click="linkClicked()" class="ng-binding ng-scope" href="/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/location" ng-click="linkClicked()" class="ng-binding ng-scope" href="/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/local-facilities-&amp;-island-view" ng-click="linkClicked()" class="ng-binding ng-scope" href="/local-facilities-&amp;-island-view.html">local
+                        facilities &amp; island view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/rates---booking---availability" ng-click="linkClicked()" class="ng-binding ng-scope" href="/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/contact-form" ng-click="linkClicked()" class="ng-binding ng-scope" href="/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/useful-links" ng-click="linkClicked()" class="ng-binding ng-scope" href="/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/guest-reviews-" ng-click="linkClicked()" class="ng-binding ng-scope" href="/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </header>
+
+                        <section class="content-wrapper">
+
+                            <aside class="navigation">
+                                <nav class="ms-block navigation-block">
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/home" class="ng-binding ng-scope" href="/#!/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/gallery" class="ng-binding ng-scope" href="/#!/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/accommodation-details" class="ng-binding ng-scope" href="/#!/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/location" class="ng-binding ng-scope" href="/#!/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/local-facilities-&amp;-island-view" class="ng-binding ng-scope" href="/#!/local-facilities-&amp;-island-view.html">local facilities &amp; island
+                        view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/rates---booking---availability" class="ng-binding ng-scope" href="/#!/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/contact-form" class="ng-binding ng-scope" href="/#!/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/useful-links" class="ng-binding ng-scope" href="/#!/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/guest-reviews-" class="ng-binding ng-scope" href="/#!/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                    </ul>
+                                </nav>
+                            </aside>
+
+<!-- start-of-content -->
+
+<div class="content">
+    <div class="ms-content-items-layout-directive ms-grid" layout-page-data="layoutPageData">
+        <!-- ngRepeat: row in pagedata -->
+        <div ng-repeat="row in pagedata" data-id="bf504e4f-a1aa-450b-a762-bab8f2b6e25c" ng-init="row.settings.color=row.settings.color||&#39;#ffffff&#39;" class="ms-row ms-level-1 ng-scope" style="">
+            <div class="ms-row-inner">
+                <!-- ngRepeat: col in row.content -->
+                <div ng-repeat="col in row.content" data-id="a87517bd-b9e5-4c45-bfd1-0322b09e8b1d" data-size="12" class="ms-col ms-level-1 ng-scope ms-col-12" ng-class="&#39;ms-col-&#39; + col.size">
+                    <!-- ngRepeat: next in col.content -->
+                    <div ng-repeat="next in col.content" class="ng-scope">
+                        <!-- ngIf: next.type!=='row' -->
+                        <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                            <div ms-content-item-controls="" actions="actions" class="ms-block text-block ms-level-1" data-id="a1073ec5-eea4-4b61-b9b7-9f301d03af55">
+                                <div style="color:;background-color:;line-height:" ng-bind-html="trustedHTML" ms-content-item-text="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-binding ng-isolate-scope">
+                                    <p></p>
+                                    <h3><span style="color:#000000"><em><strong>Useful Links </strong></em></span></h3>
+                                    <p></p>
+                                </div>
+                                <div class="element-controls ms-tools ng-scope">
+                                    <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                    <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ngIf: next.type!=='row' -->
+                        <!-- ngIf: next.type==='row' -->
+                    </div>
+                    <!-- end ngRepeat: next in col.content -->
+                </div>
+                <!-- end ngRepeat: col in row.content -->
+            </div>
+        </div>
+        <!-- end ngRepeat: row in pagedata -->
+        <div ng-repeat="row in pagedata" data-id="6dd78c6b-80a0-40ed-a0f8-7f9f93b2ed13" ng-init="row.settings.color=row.settings.color||&#39;#ffffff&#39;" class="ms-row ms-level-1 ng-scope" style="">
+            <div class="ms-row-inner">
+                <!-- ngRepeat: col in row.content -->
+                <div ng-repeat="col in row.content" data-id="02dd58f9-5e54-4328-8082-24d21594799a" data-size="12" class="ms-col ms-level-1 ng-scope ms-col-12" ng-class="&#39;ms-col-&#39; + col.size">
+                    <!-- ngRepeat: next in col.content -->
+                    <div ng-repeat="next in col.content" class="ng-scope">
+                        <!-- ngIf: next.type!=='row' -->
+                        <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                            <div ms-content-item-controls="" actions="actions" class="ms-block text-block ms-level-1" data-id="be084c77-c821-4bfe-8933-1a92f09b16f6">
+                                <div style="color:;background-color:;line-height:" ng-bind-html="trustedHTML" ms-content-item-text="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-binding ng-isolate-scope">
+                                    <p>&nbsp;</p>
+
+                                    <p style="text-align:center"><span style="color:#000000"><u><strong><em>We hope that the internet links below are of some help&nbsp;in making&nbsp;your holiday possible and achievable.&nbsp; They may assist you with finding flights, car hire and general holiday support information:</em></strong></u></span></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.alpha.gr/page/"><span style="color:#000000">http://www.alpha.gr</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><strong><em><a href="http://www.fly.co.uk/"><span style="color:#000000">www.fly.co.uk</span></a></em></strong></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><strong><em><a href="http://www.easyjet.com/"><span style="color:#000000">www.easyjet.com</span></a></em></strong></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.thomascookflights.co.uk/"><span style="color:#000000">www.thomascookflights.co.uk</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.thompsonfly.com/"><span style="color:#000000">www.thompsonfly.com</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.airflights.co.uk/"><span style="color:#000000">http://www.airflights.co.uk</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.flightline.co.uk/"><span style="color:#000000">www.flightline.co.uk</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.destinia.com/"><span style="color:#000000">www.destinia.com</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.flycheap.com/"><span style="color:#000000">www.flycheap.com</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.cheapflights.com/"><span style="color:#000000">www.cheapflights.com</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.airtours.co.uk/"><span style="color:#000000">www.airtours.co.uk</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.travelsupermarket.com/"><span style="color:#000000">www.travelsupermarket.com</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.travelzoo.co.uk/"><span style="color:#000000">www.travelzoo.co.uk</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.onthebeach.co.uk/"><span style="color:#000000">www.onthebeach.co.uk</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.flightstokefalonia.net/"><span style="color:#000000">www.flightstokefalonia.net</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.ainostravel.gr/"><span style="color:#000000">www.ainostravel.gr</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><strong><em><span style="color:#000000">&nbsp;</span><strong><em><strong><em><strong><em><strong><em><a href="http://money.marksandspencer.com/travel/travel-money/overview/"><span style="color:#000000">http://money.marksandspencer.com/travel/travel-money/overview/</span></a></em></strong></em></strong></em></strong></em></strong></em></strong></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.villanima.com/"><span style="color:#000000">http://www.villanima.com</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.kefaloniatravel.com/"><span style="color:#000000">http://www.kefaloniatravel.com/</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.agni.gr/kefalonia_travel_guide/"><span style="color:#000000">http://www.agni.gr/kefalonia_travel_guide/</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.holidayextras.co.uk/gatwick-airport-parking.html"><span style="color:#000000">http://www.holidayextras.co.uk/gatwick-airport-parking.html</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.agni.gr/learn_greek/learn_greek_online.asp"><span style="color:#000000">http://www.agni.gr/learn_greek/learn_greek_online.asp</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.debidawn.com/holidaytodolist.htm"><span style="color:#000000">http://www.debidawn.com/holidaytodolist.htm</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.travelmoneyservices.co.uk/"><span style="color:#000000">http://www.travelmoneyservices.co.uk</span></a></em></strong><span style="color:#000000"><strong><em>&nbsp;</em></strong></span></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://carrental.co.uk/"><span style="color:#000000">http://www.carrentals.co.uk/</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.moneysupermarket.com/travelinsurance"><span style="color:#000000">http://www.moneysupermarket.com/travelinsurance</span></a></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center"><u><strong><em><a href="http://www.europe.org/dialingcodes.html"><span style="color:#000000">http://www.europe.org/dialingcodes.html</span></a><span style="color:#000000">&nbsp; </span></em></strong></u></p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p style="text-align:center">&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+                                </div>
+                                <div class="element-controls ms-tools ng-scope">
+                                    <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                    <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ngIf: next.type!=='row' -->
+                        <!-- ngIf: next.type==='row' -->
+                    </div>
+                    <!-- end ngRepeat: next in col.content -->
+                </div>
+                <!-- end ngRepeat: col in row.content -->
+            </div>
+        </div>
+        <!-- end ngRepeat: row in pagedata -->
+    </div>
+</div>
+
+<!-- end-of-content -->
+                        </section>
+
+                        <footer>
+                            <ms-copyright>
+                                <div class="copyright ng-scope"> &copy; Copyright Villa Nima 2020
+                                </div>
+                            </ms-copyright>
+                        </footer>
+
+                        <div src="/static/navigation.js">
+                            <script src="/static/main.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div ms-login-popup settings="{provider:'Paypal'}"></div>-->
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- wpm commented out code
+    <script src="/static/vendor.js"></script>
+    <script src="/static/precache.js"></script>
+    <script src="/static/config.js"></script>
+    <script src="/static/scripts.js"></script>
+    -->
+</body>
+
+</html>

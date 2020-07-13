@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/villanima-components.css">
+    <link rel="stylesheet" href="/static/villanima.css">
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body ng-app="msSiteAngular" class="ng-scope" style="overflow: visible;">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <!-- ngView:  -->
+    <div class="main-container ng-scope" ng-view="">
+        <div id="ms-preview" ms-template-loader-directive="" images="images" page="page" theme-id="themeId" settings="settings" class="ng-scope ng-isolate-scope">
+            <div id="ms-html">
+                <div id="ms-body">
+                    <!--[if lt IE 7]>       <![endif]-->
+                    <!--[if IE 7]>          <![endif]-->
+                    <!--[if IE 8]>          <![endif]-->
+                    <!--[if gt IE 8]><!-->
+                    <!--<![endif]-->
+
+                    <div class="container ng-scope">
+                        <header class="main-header">
+                            <section class="banner">
+                                <div class="logo" style="">
+                                    <h1 ms-header-item-text="&#39;main-title&#39;" editable="editMode" fit-text="&#39;.logo&#39;" class="ng-isolate-scope ms-header-text-item" data-original-size="64px" style=""><span class="ng-scope">This is my title</span></h1>
+                                </div>
+                            </section>
+
+                            <div class="navigation-wrapper">
+                                <nav class="main-menu ms-block navigation-block" ms-content-item-navigation="">
+
+                                    <div class="mobile-menu">
+                                        <svg class="icon-list">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-list"></use>
+                    </svg>
+                                        <span>Menu</span>
+                                    </div>
+
+                                    <div class="mobile-menu-close">
+                                        <svg class="icon-close">
+                      <use xlink:href="bower_components/msContentItemNavigation/sprites.svg#icon-close"></use>
+                    </svg>
+                                        <span>Close</span>
+                                    </div>
+
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/home" ng-click="linkClicked()" class="ng-binding ng-scope" href="/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/gallery" ng-click="linkClicked()" class="ng-binding ng-scope" href="/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/accommodation-details" ng-click="linkClicked()" class="ng-binding ng-scope" href="/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/location" ng-click="linkClicked()" class="ng-binding ng-scope" href="/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/local-facilities-&amp;-island-view" ng-click="linkClicked()" class="ng-binding ng-scope" href="/local-facilities-&amp;-island-view.html">local
+                        facilities &amp; island view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/rates---booking---availability" ng-click="linkClicked()" class="ng-binding ng-scope" href="/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/contact-form" ng-click="linkClicked()" class="ng-binding ng-scope" href="/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/useful-links" ng-click="linkClicked()" class="ng-binding ng-scope" href="/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/guest-reviews-" ng-click="linkClicked()" class="ng-binding ng-scope" href="/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in menu -->
+                                    </ul>
+                                </nav>
+                            </div>
+
+                        </header>
+
+                        <section class="content-wrapper">
+
+                            <aside class="navigation">
+                                <nav class="ms-block navigation-block">
+                                    <ul class="nav">
+                                        <!-- ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope active">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/home" class="ng-binding ng-scope" href="/#!/home.html">home</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/gallery" class="ng-binding ng-scope" href="/#!/gallery.html">gallery</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/accommodation-details" class="ng-binding ng-scope" href="/#!/accommodation-details.html">accommodation details</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/location" class="ng-binding ng-scope" href="/#!/location.html">location</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/local-facilities-&amp;-island-view" class="ng-binding ng-scope" href="/#!/local-facilities-&amp;-island-view.html">local facilities &amp; island
+                        view</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/rates---booking---availability" class="ng-binding ng-scope" href="/#!/rates---booking---availability.html">rates - booking - availability</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/contact-form" class="ng-binding ng-scope" href="/#!/contact-form.html">contact form</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/useful-links" class="ng-binding ng-scope" href="/#!/useful-links.html">useful links</a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                        <li ng-class="(menuItem.pageId==page.id) ? &#39;active&#39;:&#39;&#39;" ng-repeat="menuItem in helper.menu" ng-hide="menuItem.hideInMenu || isShopEnable === false &amp;&amp; menuItem.type === &#39;Category&#39; || shopUrl === false" class="ng-scope">
+                                            <!-- ngIf: menuItem.type === 'Page' --><a ng-if="menuItem.type === &#39;Page&#39;" ng-href="/#!/guest-reviews-" class="ng-binding ng-scope" href="/#!/guest-reviews.html">guest reviews </a>
+                                            <!-- end ngIf: menuItem.type === 'Page' -->
+                                            <!-- ngIf: menuItem.type === 'Category' -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                            <!-- ngIf: menuItem.subMenuItems.length > 0 -->
+                                        </li>
+                                        <!-- end ngRepeat: menuItem in helper.menu -->
+                                    </ul>
+                                </nav>
+                            </aside>
+
+<!-- start-of-content -->
+
+<div class="content">
+    <div class="ms-content-items-layout-directive ms-grid" layout-page-data="layoutPageData">
+        <!-- ngRepeat: row in pagedata -->
+        <div ng-repeat="row in pagedata" data-id="d2a771d4-8bd0-446d-8485-5797b3fc4e27" ng-init="row.settings.color=row.settings.color||&#39;#ffffff&#39;" class="ms-row ms-level-1 ng-scope" style="">
+            <div class="ms-row-inner">
+                <!-- ngRepeat: col in row.content -->
+                <div ng-repeat="col in row.content" data-id="9adb32c0-5f00-400d-870b-f9048d1be587" data-size="12" class="ms-col ms-level-1 ng-scope ms-col-12" ng-class="&#39;ms-col-&#39; + col.size">
+                    <!-- ngRepeat: next in col.content -->
+                    <div ng-repeat="next in col.content" class="ng-scope">
+                        <!-- ngIf: next.type!=='row' -->
+                        <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                            <div ms-content-item-controls="" actions="actions" class="ms-block text-block ms-level-1" data-id="id-145312232229867062">
+                                <div style="color:;background-color:;line-height:" ng-bind-html="trustedHTML" ms-content-item-text="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-binding ng-isolate-scope">
+                                    <p></p>
+                                    <h3><span style="color:#000000">Please take a look at some of our Guest Reviews:</span></h3>
+                                    <p></p>
+                                </div>
+                                <div class="element-controls ms-tools ng-scope">
+                                    <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                    <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ngIf: next.type!=='row' -->
+                        <!-- ngIf: next.type==='row' -->
+                    </div>
+                    <!-- end ngRepeat: next in col.content -->
+                    <div ng-repeat="next in col.content" class="ng-scope">
+                        <!-- ngIf: next.type!=='row' -->
+                        <div ng-if="next.type!==&#39;row&#39;" level="1" ms-content-item="" content-item-data="next" editable="editable" class="ng-scope ng-isolate-scope">
+                            <div ms-content-item-controls="" actions="actions" class="ms-block text-block ms-level-1" data-id="5cf097c2-d9fd-487a-a22f-f885cde182b6">
+                                <div style="color:;background-color:;line-height:" ng-bind-html="trustedHTML" ms-content-item-text="" content-item-data="contentItemData" content-item-meta-data="contentItemMetaData" class="ng-binding ng-isolate-scope">
+                                    <p></p>
+                                    <h3><span style="color:#000000">Fantastic<br>
+Donna<br>
+Review Submitted: 5<sup>th </sup>September 2014 Date of Stay: August 2014<br>
+5 out of 5</span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Stayed at Villa Nima for 2 weeks&nbsp;beginning of August and absolutely loved it.&nbsp;The Island is beautiful and there is so much to see, however I strongly&nbsp;advise car hire. We travelled the whole&nbsp;island and was really grateful to have such a great base to stay at. The villa had everything we needed and the&nbsp;views were breathtakingly amazing, I sometimes had to pinch myself as I could&nbsp;not actually believe how lucky we were to come across this villa J</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Great Holiday</strong><br>
+<strong>Shaun</strong><br>
+<strong>Review Submitted: 7th August 2013 &nbsp;Date of Stay: June 2013</strong><br>
+<strong>5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Villa Nima is superb, everything in it is to a high standard, right down to books, dvds and games, which are also provided. &nbsp;The views are stunning, from every angle.&nbsp;The management team, local people are all very friendly. &nbsp;We were a group of 5 adults and a 2yr old grandson, who loved waiting for the goats to walk past everyday. &nbsp;Can't fault anything at all, a lovely holiday villa, for a lovely holiday.</span>
+                                        <span style="color:#cc6633">&nbsp;</span>
+                                    </h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Bean<br>
+Date of Stay: August 2012</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">This is our first visit to Kefalonia and it has more than lived up to our expectations!&nbsp;The villa and views are absolutely stunning.&nbsp;We've had a lovely holiday and would love to return.&nbsp;Thank you for a lovely holiday.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Murphy<br>
+Date of Stay: July 2012</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">A fabulous villa with so many facilities and comforts; we've thoroughly enjoyed our week here, thanks very much to Tony and Hazel.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Stone<br>
+Date of Stay: July 2012</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">A wonderful stay in a beautiful location.&nbsp;The villa was perfect for us to enjoy a relaxing week in��.and we definitely did!&nbsp;Thank you for thoughtfully providing everything we could possibly need.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Weller<br>
+Date of Stay: June 2012</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Fabulous villa, beautiful location and wonderful weather.&nbsp;The Olive lounge restaurant is a must.&nbsp;We have enjoyed every moment of our stay.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Taylor<br>
+Date of Stay: June 2012</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Only one word - fabulous.&nbsp;We are so sorry to be leaving your lovely villa</span><span style="color:#cc6633">.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Fantastic holiday at Villa Nima<br>
+Gry Helene S.<br>
+Review Submitted: 12 July 2012 &nbsp;Date of Stay: June 2012<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">We stayed at Villa Nima for one week and had a fantastic holiday. The house itself is beautiful and the views from all the balcony's alone are worth the trip. The children loved the pool and stayed in the water most of the time. Inside the house everything was more than we expected, sometimes when you find things on the internet it doesn't quite live up to what you expected but in this case the pictures and the description can't show you how nice it actually is. The kitchen was so well equipped and the welcome pack was a wonderful surprise, the beds were so comfortable, the air-conditioning worked so well and everything was nice and clean. You will need a car to get around a little bit, but there are great beaches close by, and you have everything else you need in a walking distance, like supermarkets, tavernas etc. We couldn't ask for anything more for a holiday and would highly recommend this to others.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Outstanding.<br>
+Tony O<br>
+Review Submitted: 15<sup>th </sup>June 2012 &nbsp;Date of Stay: May 2012<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Well what can I add to what has already been said in other reviews. Absolutely fantastic. One of the most relaxing holidays we have ever had. The villa is beautiful, the views are stunning, the islanders are so friendly and the island is so unspoilt. There are no bad reviews of this villa because there is nothing to fault. It is a real find. After trawling the internet for hours looking for the best holiday we could find, we settled on Villa Nima. Thank goodness we did. We fell in love with the wine cage in the villa (that is well stocked and you can help yourself to, just replace what you have used by the end of your stay for the next guests), so much that we have ordered the exact same one. Would I recommend Villa Nima to friends? Definitely. Would I return to Villa Nima? Yes please</span>
+                                        <span style="color:#cc6633">.</span>
+                                    </h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Perfect location on a delightful island<br>
+Don. D<br>
+Review Submitted:&nbsp;20th September&nbsp;2011&nbsp;Date of Stay:&nbsp;September 2011</strong></span><br>
+                                        <span style="color:#000000"><strong>5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">Villa Nima provided superb accommodation for us. The location is stunning with mountain backdrop and many lovely beaches to explore. Lots of excellent tavernas close by - some even accessible by foot, although a car is needed to enjoy the area properly. We all had a great time and spent much of our holiday planning a return visit.</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">10 out of 10!</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">Recommended for:&nbsp;Age 55</span></span>
+                                    </h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>James family, Nesta, Jonty, Sarah and Phil 21<sup>st</sup>August to 4<sup>th </sup>September 2011</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">We loved the villa so much we could hardly bear to leave it.&nbsp;Amazing views, comfortable accommodation and fantastic weather.&nbsp;Lots of lovely lunches in the shade of the bbq area.&nbsp;We enjoyed an absolutely fantastic dinner cooked by Viva in the house.&nbsp;The Olive lounge was our favourite taverna for evening meals.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513"><u>Poem by Tilly and Toby age 10</u></span></h4>
+
+                                    <h4>&nbsp;</h4>
+
+                                    <h4><span style="color:#8B4513">From the bats flying high</span></h4>
+
+                                    <h4><span style="color:#8B4513">To the twinkling stars in the pitch black sky</span></h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">The buzzard soars over the rocky hills</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">The lizards crawl along the walls, as the night falls</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">You can hear the goats ring their bells, morning and noon</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">I hope we can come back soon</span><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">.</span></span>
+                                    </h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>McLean family, Nairobi, Kenya - 8<sup>th </sup>to 21<sup>st</sup>August 2011</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">A beautiful island with glorious seas and beaches.&nbsp;Villa Nima is a good base to make our home while we explored as much of the island as we could.&nbsp;Many thanks.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3>&nbsp;</h3>
+
+                                    <h3><span style="color:#000000"><strong>Hayes and Hudson families 24<sup>th</sup>July to 7<sup>th</sup>August 2011</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Lovely island, relaxing holiday, wonderful weather!&nbsp;Great modern, clean villa.&nbsp;Some recommendations that we really enjoyed - Trapezaki beach, Denis restaurant on Trapezaki beah, great food.&nbsp;Andromeda restaurant, we ate there twice and it was very good.&nbsp;Assos and Fiskardo, both worth a visit.&nbsp;Bakery at Peratata is delicious!!!</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Superb Villa<br>
+Tom, United Kingdom<br>
+Review Submitted:&nbsp;15th July 2011&nbsp;Date of Stay:&nbsp;July 2011<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">The photographs of Villa Nima do not do it justice. It's a wonderful villa, built and furnished to an excellent quality with superb views. It was lovely to wake in the morning and sit on the balcony looking out over the bay below. The villa contained everything we needed to make our holiday a pleasurable experience. The villa was spotless and well maintained.<br>
+<br>
+It's a 5 to 10 min walk from the village which contains several excellent tavernas and three mini markets which had a large range of items.<br>
+<br>
+Tony and Hazel were very responsive to emails regarding the booking of the villa. We also had a helpful visit on our second day from Angela (the Managing Agent) who gave us advice on what to visit and where various amenities could be found.<br>
+<br>
+We hired a car to enable us to tour the island as this was our first visit to Kefalonia.<br>
+<br>
+We would highly recommend Villa Nima.</span></h4>
+
+                                    <h4><span style="color:#8B4513">Recommended for:&nbsp; Age 55+, Tourists without a Car, Families with Young Children</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Tom, Vicki and Hanna Carroll 3<sup>rd </sup>to 10<sup>th</sup>July 2011</strong></span></h3>
+
+                                    <h4><span style="color:#8B4513">Wow! Such a fabulous villa with some splendid views.&nbsp;The pool was so perfect for cooling down, midnight dips are fully recommended.&nbsp;A magical holiday in a beautiful place, thank you so much Hazel and Tony!!!</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Wonderful week 5 - 12 June 2011<br>
+ButchAngHobb Ely, Cambs<br>
+Review Submitted:&nbsp;14th June 2011&nbsp;Date of Stay:&nbsp;June 2011<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">It does what it says on the tin! This villa is absolutely beautiful and exactly as it looks on the website and more. The day we arrived and unlocked the front door we straight away saw the stunning views of the bay and every day I woke up I could see the same view. The villa was equipped with everything you could possibly need and Angela (the Property Manager) was lovely and extremely helpful and arranged for us to have Viva (Greek Chief - which we recommend) to come in and cook for us for the same amount as a trip to a local taverna. It was amazing and so was Viva! which was superbly cooked by Viva.&nbsp;The meal was very good and the cheese caked was out of this world. Thank you Tony and Hazel for allowing your villa to be used, we certainly reccommend it for a very relaxing holiday. We would also recommend Approdites for a meal out. </span></h4>
+
+                                    <h4>&nbsp;</h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Our collective view is that the house is ideal with breathtaking views, beating the hell out of most views shown on British tv programmes.&nbsp;We found, as have most people, the local people are so very friendly and, we're ashamed to admit it, speak English as well as, and in some instances, better than us.&nbsp;</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">The villa is superb and in our opinion cannot be beaten!&nbsp;All of your needs are catered for, thank you Tony and Hazel.</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Recommended for:&nbsp; Age 55+, Adventure Seekers, Sightseeing</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Gary and Glen Whaley 14<sup>th </sup>to 28<sup>th</sup>June 2011</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Efharisto (thank you) Hazel and Tony for the use of your lovely Villa Nima.&nbsp;It's facilities are excellent and it's location at Vlahata village is a perfect base to explore this amazing island.&nbsp;This is our first visit to Kefalonia, but we were soon embraced by the islands' outstanding and sometimes breathtaking scenery.&nbsp;It took us into a world of 'gourmet food, Mythos beer, Greek culture and unforgettable Greek hospitality'.&nbsp;This has been a wonderful holiday and one to remember.&nbsp;We will be back!!!!</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong><strong>A lovely villa and a beautiful island<br>
+Claire,&nbsp; London<br>
+Review Submitted:&nbsp;27th May 2011&nbsp;Date of Stay: May 2011<br>
+5 out of 5</strong></strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Two friends and I stayed at Villa Nima for a week in May. We had a lovely time, the villa has everything you need and is situated in between the beautiful sea and the amazing mountains. We couldn't get enough of the views, they were breathtaking. </span></h4>
+
+                                    <h4><span style="color:#8B4513">We arrived at the charming Villa Nima and were immediately impressed with the beautiful and well-equipped villa and the wonderful surroundings and immediately concluded that we couldn't fault the place.&nbsp;We ventured to Myrtos beach, which was stunning.&nbsp;We had the best meal of our holiday at Assos.&nbsp;We had a lovely time and absolutely loved Villa Nima and Kef (as those in the know call it) and particularly enjoyed feeling like Paris Hilton, Lindsay Lohan and Nicole Richie.</span></h4>
+
+                                    <h4><span style="color:#8B4513">The island itself is very small and we managed to drive round most of it in a day which is definitely worth doing as some of the places we visited were amazing and very quaint. Food wise, there are three larger supermarkets not too far away by car which we found good, especially Lidl for drink, however there are also a few mini markets within walking distance to the villa which had a large range of items as well. The restaurants we visited were lovely and all the people we met were very friendly. All in all we had an amazing time at Villa Nima and I would recommend to anyone. None of us wanted to come home at the end of our week! </span></h4>
+
+                                    <h4><span style="color:#8B4513">Recommended for:&nbsp; Age 55+, Girls Getaway, Families with Young Children</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Brinkman Family 20<sup>th </sup>May to 5<sup>th</sup>June 2011</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">We liked Villa Nima very much and everything is included!&nbsp;The island is so beautiful, so green and everywhere is different.&nbsp;Some very nice places to eat, Spiros, Olive Lounge, Bulters House (Lassi).&nbsp;Take trips and find out about this beautiful island and nice people, a car is useful.&nbsp;Tony and Hazel, thanks a lot.&nbsp;</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>A Beautiful Place To Stay<br>
+Team Ray, Beckenham, Kent&nbsp;<br>
+Review Submitted:&nbsp;9th October 2010&nbsp;Date of Stay: September 2010<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Having Villa Nima is the perfect choice for a relaxing holiday in a beautiful location.&nbsp;The villa was equipped with everything to make the stay comfortable and create a 'home from home' feeling.&nbsp;The panoramic views from the villa are incredible, amazing sunsets and the faint tinkling of the goatbells all add to a wonderful memory of our stay.&nbsp;The locals were more than welcoming and the village and local area had lots to offer.</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">I couldn't recommend Villa Nima more highly and thank Tony and Hazel for a truly wonderful holiday.&nbsp;I can't wait to go back! Rachael, Martin, Di and Derek, Lyn and Chris.</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Recommended for: Age 55+, Adverture Seekers, Girls Getaway, Sightseeing, Families with Teenagers, Romantic Getaway</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Beautiful Villa</strong><br>
+<strong>Jay and Sue&nbsp;<br>
+Review Submitted:&nbsp;7th October 2010&nbsp;Date of Stay: September 2010<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Having enjoyed all that Kefalonia and Villa Nima had to offer last year we returned for another fabulous holiday. The villa is excellent accommodation and exactly as described on the site, set in beautiful grounds with stunning views, The many balconies, swimming pool and barbecue area perfect for relaxing and having fun. Internally the accommodation is spotlessly clean and well equipped, The kitchen has every utensil you could wish for but with so many good taverna's in the area, I expect this area is never used to it's full potential. We were also impressed with the detail to the smaller items such as plenty of coat hangers in spacious wardrobes and soft towels and bedding. The villa is within easy walking distance to various taverna's and supermarkets but would recommend a car to view the island and it's many beautiful places. The weather was still lovely and warm for late September but cooler in the evenings once the sun went down.<br>
+<br>
+This trip we were introduced to the 'Preview' Taverna at the top of Auithos beach, here we enjoyed excellent food, company and once again stunning views as it is right next to the beach, being made to feel very welcome where nothing was to much trouble. The impressive Melissani Lake and Drogaratis Cave is worth visiting but you will need to be fit enough to climb the many stairs to the cave. Argostolli is well worth visiting, in the morning's you can buy your fish direct from the fishermen on their boats, you may also be lucky enough to see the turtles swimming close by, where they often come up around the boat area's.<br>
+<br>
+We had a really great time and would recommend the island and villa </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Recommended for:&nbsp; Age 55+, Girls Getaway, Sightseeing, Families with Teenagers, Families with Young Children, Romantic Getaway</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Superb Villa and Fantastic Island!<br>
+Sue &amp; Tim,&nbsp; Linton, Cambridgeshire<br>
+Review Submitted:&nbsp;21st September 2010&nbsp;Date of Stay:&nbsp;August 2010<br>
+5 out of 5 </strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">A beautiful villa with fantastic views felt relaxed as soon as we arrived. Our 3 teenage children spent more time in the pool than out kept them happy for hours! We hired a car to see the island and scenery and beaches were stunning. The local Tavernas and shops were very good and friendly. There was a good choice of Watersports at Scala and two of us did Scuba Diving at Lassi which was fantastic! We wouldn't hesitate coming back there was so much we didn't manage to fit in. </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Recommended for:&nbsp; Age 55+, Girls Getaway, Families with Teenagers, Romantic Getaway</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>What Can I&nbsp;Say !!!<br>
+Chris &amp; Jane&nbsp;<br>
+Review Submitted:&nbsp;16th September 2010&nbsp;Date of Stay:&nbsp;August 2010<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">This Villa has it all, on the edge of a lovely village, overlooking a beautiful bay and countryside, near two or three stunning beaches, near Argostoli, convenient for the airport. I told the owners that I did not want to leave a positive review as I would rather&nbsp;Villa Nima was kept as my secret but I would feel eternally guilty if I had not left Tony and Hazel a glowing report. The Villa itself is perfect I need say no more</span></h4>
+
+                                    <h4><span style="color:#8B4513">Recommended for:&nbsp; Age 55+, Sightseeing, Families with Teenagers</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Fantastic Villa<br>
+Babies first holiday York North Yorkshire<br>
+Review Submitted: July 8, 2010 Date of Stay: June 2010<br>
+5 out of 5</strong> </span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Stayed at Villa Nima from 19th June 2010 to the 3rd July 2010 with a group of five. What more can I say, Villa was fantastic and exactally how it was described on the site. Everything you wanted was stocked and Tony and Hazel were very kind and supplied us with a travel cot and baby high chair for our little one. Kefalonia is a fantastic Island and this is a great villa to see the sites without being in a busy town. It is set in a tranquil setting and the only thing you hear in the morning is the Cockeral crowing and the goats being moved to a new pasture.<br>
+Recommended for: Age 55+, Tourists without a Car, Sightseeing, Families with Young Children</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><br>
+                                        <span style="color:#000000"><strong>Gorgeous villa in lovely spot<br>
+Country Folk Bristol<br>
+Review Submitted: July 8, 2010 Date of Stay: May 2010<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">The villa was absolutely lovely - gorgeous decor, well equiped, spotlessly clean, great views and nice plunge pool. ...can't recommend it highly enough!</span></h4>
+
+                                    <h4><br>
+                                        <span style="color:#8B4513">I would suggest renting a car because although there are several very good restaurants and mini markets within easy walking distance, you need transport if you want to see the best sandy beaches, lovely towns and sights around the island.<br>
+<br>
+We would highly recommend not only the Villa but also the area which is very central for seeing the whole Island.<br>
+Recommended for: Age 55+, Sightseeing, Families with Young Children, Romantic Getaway</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Villa Nima May 2010<br>
+Kerri &amp; Kayleigh<br>
+Kent<br>
+Review Submitted: 24th June 2010 Date of Stay: 18th May 2010<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">A&nbsp;fantastic holiday ideal for those who want to unwind and re-energise. Of all my holidays this was the most enjoyed and most comfortable. The villa is spacious and homely and very close to everything you will need. You can enjoy the local wine and food in restaurants close by or enjoy the huge kitchen at villa nima and cook for yourselves. Enjoy the food on the balcony or by the pool with amazing scenery. At night the villa and pool is lit up and looks outstanding so you can enjoy your holiday home. The island has a lot of history and a lot of beaches and places to visit and choose from but whatever your experience, it is guaranteed to be a great, very happy and memorable one.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><strong><strong>Villa Nima Oct 09</strong><br>
+                                        <strong>Jay and Co<br>
+Kent<br>
+Review Submitted: October 11, 2009 Date of Stay: September 2009<br>
+5 out of 5</strong></strong>
+                                    </h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">I recently had a wonderful time in kefalonia and Villa Nima, and found this was the ideal place&nbsp;to&nbsp;getaway and relax. The accommodation was excellent, spacious, spotlessly clean, well equipped, beautifully decorated and comfortable. The villa had a relaxing atmosphere and gave stunning views across the bay, where we were able to watch beautiful sunsets in the evenings.<br>
+<br>
+The villa is well situated though I feel a car would be a bonus to view the many beauty spots the island has to offer. Within walking distance to the villa are various well stocked supermarkets, Lourdata beach and resturants of which La Mer is very good.<br>
+<br>
+Some of the lovely places worth visiting are Argostoli, Agia Efimia, Sami, Skala and its beach also Mytos beach. The island is so pretty you won't be disappointed, we found many small isolated, lovely beach areas along the coast to stop and enjoy, which would be ideal for a picnic.<br>
+<br>
+The fishing boats in Argostoli are really something to see and you can buy their days catch direct from the boats, if you are really lucky as we were you will get to see the turtles swimming around searching for food.<br>
+<br>
+We ate at some lovely places often enjoying tradition dishes, I would suggest that the restaurant Posada in the museum hotel George Molfetas in Faraklata is worth a visit, the welcome and food are excellent and there are many interesting historical items around the restaurant to view.<br>
+<br>
+I really enjoyed my stay and would recommend the accommodation and island to anyone.</span><strong>&nbsp; </strong></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong><strong>Villa Nima September 2009<br>
+JudeW01<br>
+Preston, England<br>
+Review Submitted: September 30, 2009 Date of Stay: September 2009<br>
+5 out of 5</strong></strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">We stayed at Villa Nima mid September and had a really wonderful holiday. The villa was as promised in the photos beautifully appointed and everything was of a high standard. The decor is very well thought out and suits the large and light rooms with stunning views from all balconies. The pool and pool area was a lovely place to sit with comfortable sun loungers and again great views. </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">The villa is in a good location from which to explore the island, with nice beaches nearby and a short drive to the capital which offered great views, shopping and lots of choices for eating out at night. There are small shops a short walk away owned by locals who were very friendly and there were also good places to eat nearby. Kefalonia was a lovely island with stunning scenery, friendly people and great weather. The owners were helpful and pleasant for the booking and also during the stay and we wouldn't hesitate to recommend this as a great place to stay for a comfortable and truly relaxing holiday.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Excellent Villa<br>
+Don Boy<br>
+Watford, Herts, United Kingdom<br>
+Review Submitted: September 22, 2009 Date of Stay: May 2009<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">I rented this villa with friends soon after construction in May 2009 and have to say the owners' attention to detail is second to none - we all loved the place and wanted for nothing. </span></h4>
+
+                                    <h4><span style="color:#8B4513">The villa has been built and decorated to an exceptional standard of workmanship, decor, and comfort - you will not be disappointed. The villa is situated on the edge of a small, quiet village (Vlachata) and has the most beautiful panoramic views down to the coast from the veranda, pool and garden areas. </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">I have travelled a fair bit and just don't understand anyone going to the Caribbean (for instance) and staying in a 5 star prison for fear of safety - Kefalonia is great - you can wander round all times of day and night without any problems - the locals love the Brits and are very friendly - nothing is too much trouble. Kida are accepted everywhere.</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">There really is something in Kefalonia for everyone and all ages - the owner hooked me into some lovely traditional bars and tavernas to while away the warmest of evenings with a variety of entertainment if wanted. Even the youngsters were happy. I went fishing, walking in the national parks as well as the usual tourist stuff in Argostoli etc. If you just want to relax or partake of activities you will find them all here - my guess is you will drop out and just enjoy doing that. I bet you will seriously consider going back.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Calm &amp; Relaxing<br>
+Meercat<br>
+Liverpool, UK<br>
+Review Submitted: September 21, 2009 Date of Stay: September 2009<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">I really enjoyed my week in super 'Villa Nima'. Exellent accommodation, brilliant views, lots of places to eat within easy walking distance (I recommend La Mer). A lovely village and people are so friendly.</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0em; line-height:1.3em">Listing of layout,location,facilities - accurate. Property was spotlessly clean. Great customer service from owner and I would and have recommended this property to others, without reservation. Every detail has been thought through to provide a smooth, harmonious and stress free time.</span></span>
+                                    </h4>
+
+                                    <h4><span style="color:#8B4513">I hope to visit the Island again and do a tour of the Island. </span></h4>
+
+                                    <h4><span style="color:#8B4513">Thank you so much to the owner - perfect holiday!</span><strong>&nbsp;</strong></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong><strong>Stunning!<br>
+barbsy<br>
+hampshire<br>
+Review Submitted: September 5, 2009 Date of Stay: August 2009<br>
+5 out of 5</strong></strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513"><span style="font-size:1em; letter-spacing:0px; line-height:1.6em">This villa was absolutely everything we could have hoped for. We wanted something away from the hustle of life to just completely chill out. The villa is lovely and tastefully put together. Very spacious and well equipped. Spotlessly clean with modern furnishings. The pool area is great, a nice size with plenty of loungers. The pool was always clean and regularly maintained by the Pool man early mornings.</span></span>
+                                    </h4>
+
+                                    <h4>&nbsp;</h4>
+
+                                    <h4><span style="color:#8B4513">&nbsp;Set on the hillside over looking the bay, to sit and watch the sun go down everynight was absolutely idylic. The view was amazing. </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">It is fairly isolated set in between two other villas, but we were not disturbed at all by either of this. It felt very private, and was incredibly quiet. The village was less than a five minute walk away with half a dozen or so reasonably priced good restaurants and supermarkets. The locals were all very helpful and friendly. The closest beach a five minute drive, but there are many beautiful beaches around the island well worth an explore. Myrtos beach being a must. The island is easy to get around by car.</span></h4>
+
+                                    <h4><span style="color:#8B4513">Kefelonia is one of the prettiest Greek Islands and it seemed really quiet everywhere. If you want a get away from it all holiday you will be hard pressed to beat Villa NIma.</span></h4>
+
+                                    <h4><span style="color:#8B4513">From the minute we booked, The owner was very helpful and seemed to genuinely care that the holiday went well. On the island the property manager was equally helpful dealing with a small air con problem quickly and efficiently. Thank you all for a great holiday.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Villa Nima<br>
+Jacqui &amp; Ian<br>
+Chelmsford, Essex<br>
+Review Submitted: September 2, 2009 Date of Stay: July 2009<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:#8B4513">Villa Nima is furnished to a high standard with everything needed for a great family holiday and it's location on the hillside with Mount Aenos towering up on one side and the olive groves and the crystal clear blue waters of the Ionian sea spread out on the other is just perfect.</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">The ground floor open plan layout of the villa is great, the decoration very tasteful and the air conditioning very effective. The kitchen is very well fitted out with all mod cons, although with so many good restaurants around I am afraid we didn't make best use of it. The three en suite bedrooms are all spacious, the beds were comfortable and there is plenty of wardrobe space. The terrace off the two first floor bedrooms offers a great vantage point to watch the morning ferry leave for Zante or the sun go down over the ancient hilltop Crusader castle in the distance. Outside there are plenty of seating areas, ample poolside sunbeds and two giant parasols to provide welcome shade from the midday sun. When it all got too hot a dip in the pool soon cooled us down. The water was always refreshing but never cold even at 11 o clock at night.</span></h4>
+
+                                    <h4><span style="color:#8B4513">The villa is close to a good selection of family run tavernas, all serving excellent food, and a couple of well stocked supermarkets. The nearest of these are probably less than 500 metres away but they cannot be seen or heard from the villa so they do not disturb the peace and quiet.</span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">In general we found Vlachata a good base for exploring all over the island. The pebbly beaches at Lourdas and Trapezaki are superb and not at all crowded even in August. If you want a beach of your own hire a self drive motor boat from Lourdas or Kateleios and take your pick. Further afield Assos is beautiful and Skala and Sami are both worth a visit and of course the world famous Myrtos beach is a must see, although that's one beach that is busy. Sadly we didn't make it up to Fiskardo, apparently the prettiest town on the island, but again it is easily within reach had we had a few more days on the island.</span></h4>
+
+                                    <h4><span style="color:#8B4513">We had a great holiday on Cephalonia. If you looking to stay on this beautiful island then we would have no hesitation in recommending Villa Nima as the place to stay. Thank you very much Hazel and Tony.</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <h3><span style="color:#000000"><strong>Villa Nima 2009<br>
+Sean1<br>
+Greenwich, London<br>
+Review Submitted: June 28, 2009 Date of Stay: May 2009<br>
+5 out of 5</strong></span></h3>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Great weather! Great Location! we have fallen in love with the island of Kefallonia. The villa boasts panoramic views of the sea coves and mountainous back drop. The en suite bathrooms were deluxe and all rooms were tailored to a high standard. A nice touch was the welcoming air conditioned villa with cooled beers provided in the fridge. The furnishings were of a high standard and the balconies and garden gave us time to relax and appreciate the spectacular views. Adequate towels and new bed linen were provided including a well done mid week cleaning and pool service.</span></h4>
+
+                                    <h4><span style="color:#8B4513">We enjoyed sunset evenings dining at local tavernas within easy walking distance of the villa. Aswell as visits to Lourdas beach and numerous coves and beaches dotted throughout the island. One main road navigates you around the entire island and allows you to discover its many beauty spots and places of interest. The island is unique with its clear blue Ionian sea and surrounding greenery with breathtaking scenery is appealing to all. </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">It was a delight to stay in this villa which is extremely tasteful and well designed. The interior consists of quality furnishings, spacious rooms and every appliance you could possibly wish for. We enjoyed fine cuisine, local shops, bars, St George's castle, the famous Myrtos beach, walking, watersports, fishing, travelling, architecture and much more!! Around every corner seeks a new adventure the island is a perfect retreat catering for everyone's tastes.</span></h4>
+
+                                    <h4><span style="color:#8B4513">We recommend villa Nima in its entirety. </span></h4>
+
+                                    <h4><span style="color:rgb(139, 69, 19); font-size:1em; letter-spacing:0em; line-height:1.3em">Recommended for:&nbsp; Girls Getaway, Families with Teenagers, Adventure Seekers, Age 55+, Sightseeing, Families with Young Children, Romantic Getaway</span></h4>
+
+                                    <p>&nbsp;</p>
+
+                                    <p>&nbsp;</p>
+                                    <p></p>
+                                </div>
+                                <div class="element-controls ms-tools ng-scope">
+                                    <div class="element-control has-tooltip delete icon-delete" ng-click="deleteElem()" ms-tooltip="" tooltip-content="Delete"></div>
+                                    <div class="element-control has-tooltip handle icon-drag" ms-tooltip="" tooltip-content="Click and drag to move"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end ngIf: next.type!=='row' -->
+                        <!-- ngIf: next.type==='row' -->
+                    </div>
+                    <!-- end ngRepeat: next in col.content -->
+                </div>
+                <!-- end ngRepeat: col in row.content -->
+            </div>
+        </div>
+        <!-- end ngRepeat: row in pagedata -->
+    </div>
+</div>
+<!-- end-of-content -->
+                        </section>
+
+                        <footer>
+                            <ms-copyright>
+                                <div class="copyright ng-scope"> &copy; Copyright Villa Nima 2020
+                                </div>
+                            </ms-copyright>
+                        </footer>
+
+                        <div src="/static/navigation.js">
+                            <script src="/static/main.js"></script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<div ms-login-popup settings="{provider:'Paypal'}"></div>-->
+
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- wpm commented out code
+    <script src="/static/vendor.js"></script>
+    <script src="/static/precache.js"></script>
+    <script src="/static/config.js"></script>
+    <script src="/static/scripts.js"></script>
+    -->
+</body>
+
+</html>
